@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>shreyas portfolio</title>
+  <link rel="stylesheet" href="style.css ">
+  <script src="https://ome.com/63b7116b9c.js" crossorigin="anonymous"></script>
+</head>
+
+    <body>
+        <div id="header">
+          <div class="container">
+            
+            <nav>
+             
+              <ul>
+                <li><a href="#"><img src="logo1.jpg" class="logo"></a></li>
+                <span class="a">
+                <li><a href="#home" > Home</a></li>
+                <li><a href="#about" > About</a></li>
+                <li><a href="#services" > Services</a></li>
+                <li><a href="#Portfolio"> Portfolio</a></li>
+                <li><a href="#contact"> Contact</a></li>
+              
+              </ul>
+              
+            </nav>
+            <div class="header-text">
+              <p>Aspiring Software Engineer</p>
+              <h1>Hey it's <span>Shreya,</span> <br>I am a first year CSE student.</h1>
+            </div>
+          
+
+          </div>
+          
+        
+        
+        </div>
+        <div id="about">
+          <div class="container">
+            <div class="row">
+              <div class="about-col-1">
+                <img src="about2.jpg">
+              </div>
+              <div class="about-col-2">
+                <h1 class="subtitle">About Me</h1>
+                <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                <div class="tab-titles">
+                  <p class="tab-links active-link" onclick="opentab('Skills')">Skills</p>
+                  <p class="tab-links active-link" onclick="opentab('Education')">Education</p>
+
+                </div>
+                <div class="tab-contents active-tab" id="Skills">
+                  <ul>
+                    <li><span>C language </span><br> Basic C programming </li>
+                
+                    <li><span>Front-End Web Dev</span><br>  HTML<br>  CSS<br>  JS</li>
+                  </ul>
+                </div>
+                <div class="tab-contents" id="Education">
+                  <ul>
+                    <li><span>2023-current</span><br>Studying BTECH CSE  </li>
+                
+                    <li><span>2020</span><br>10th grade pass out with 95.24%</li>
+                    <li><span>2022</span><br>12th grade pass out with 90.50%</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <!-----Services----- -->
+        <div id="services">
+          <div class="container">
+            <h1 class="sub-title" >My Services</h1>
+            <div class="services-list">
+              <div>
+                
+                  <i class="fa-solid fa-code"></i>
+                
+                
+                <h2 class="web-list">Web Design </h2>
+                <p class="web-list" >Lorem ipsum dolor sit amet, consectetur adipiscing elit,<br> sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                
+              </div>
+            </div>
+          </div>
+        </div>
+        <!----Portfolio-->
+        <div id="Portfolio">
+          <div class="container">
+            <h1 class="sub-title" >My Work</h1>
+           <div class="work-list">
+            <div class="work">
+              <img src="work-1.png">
+              <div class="layer">
+                <h3 >Social Media App</h3>
+                <p>Meet new people across the globe!</p>
+              </div>
+            </div>
+            <div class="work">
+              <img src="work-2.png">
+              <div class="layer">
+                <h3 >Music App</h3>
+                <p>Listen to your favorite songs!</p>
+              </div>
+            </div>
+            <div class="work">
+              <img src="work-3.png">
+              <div class="layer">
+                <h3 >Online Shopping App </h3>
+                <p>For all your needs!</p>
+              </div>
+            </div>
+           </div>
+          </div>
+          
+        </div>
+        <!-------Contact----- -->
+        <div id="contact">
+          <div class="container">
+            <div class="row">
+              <div class="contact-left">
+                <h1 class="sub-title" >Contact Me</h1>
+                <p class="info">shreyasinghhhh@gmail.com</p>
+                <p class="info">9082532164</p>
+                <div class="social-icons">
+                  <a href="https://instagram.com"> <i class="fab fa-instagram"></i></a>
+
+                </div>
+
+                <a href="CV (1).pdf" download class="btn btn2" > Download CV</a>
+
+              </div>
+              <div class="contact-right">
+                <form>
+                  <input type="text" name="Name " placeholder="YOUR NAME" required>
+                  <input type="email" name="Email" placeholder="YOUR EMAIL" required>
+                  <textarea name="Message" placeholder="YOUR MESSAGE" ></textarea>
+                  <button type="Submit" class="btn btn2">Submit</button>
+                </form>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
+        <script>
+          var tablinks= document.getElementsByClassName("tab-links");
+          var tabcontents= document.getElementsByClassName("tab-contents");
+
+          function opentab(tabname){
+            for(tablink of tablinks){
+              tablink.classList.remove("active-link")
+            }
+            for(tabcontent of tabcontents){
+              tabcontent.classList.remove("active-tab")
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+          }
+        </script>
+
+    </body>
+  </html>
